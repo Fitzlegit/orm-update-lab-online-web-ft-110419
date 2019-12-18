@@ -1,7 +1,7 @@
 require_relative "../config/environment.rb"
 
 class Student
-  attr_accessor :name, :grade, 
+  attr_accessor :name, :grade,
   attr_reader :id
 
   def initialize(name, grade, id=nil)
@@ -15,7 +15,7 @@ class Student
       CREATE TABLE IF NOT EXISTS students (
         id INT PRIMARY KEY,
         name TEXT,
-        grade INT
+        grade TEXT
       )
     SQL
 
